@@ -16,7 +16,6 @@
 	}
 	body {
 		margin: 0;
-		background-color: #ebebeb;
 	}
 	table {
 		border-spacing: 0;
@@ -30,75 +29,190 @@
 	.wrapper {
 		width: 100%;
 		table-layout: fixed;
-		-webkit-text-size-adjust: 100%;
-		-ms-text-size-adjust: 100%;
+		background-color: #ebebeb;
 		padding-bottom: 60px;
 	}
 	.main {
 		width: 100%;
 		max-width: 1200px;
+		box-shadow: 0 0 25px rgba(0, 0, 0, .15);
 	}
-	.text-area {
+	.two-col {
 		width: 100%;
-		max-width: 1200px;
-		margin-bottom: 50px;
+		background-color: black;
+		font-size: 0;
 	}
-	.triple-section {
+	.two-col .column {
 		width: 100%;
-		max-width: 1200px;
+		max-width: 600px;
+		display: inline-block;
+		vertical-align: top;
 	}
-	.triple-section-title {
-		width: 100%;
-		max-width: 1200px;
+	.banner-logo {
+		padding: 45px 35px;
 	}
-	.social-media-title {
-		width: 100%;
-		max-width: 1200px;
-		background-color: #000;
+	.banner-link {
+		padding: 30px 30px 10px 340px;
 	}
-	.social-media-icons {
-		width: 100%;
-		max-width: 1200px;
-		padding: 0 100px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		background-color: #000;
-	}
-	#banner-logo {
-		background-color: #000;
-		height: 134px;
-		max-height: 134px;
-		min-height: 110px;
-	}
-	#banner {
-		position: relative;
-	}
-	#pgd-banner-logo {
-		height: 55px;
-		width: 390px;
-		padding-left: 34px;
-	}
-	#banner-link {
-		position: absolute;
-		font-family: Arial, Helvetica, sans-serif;
-		font-size: 21.59px;
-		color: #fff;
+	.a-banner-link {
+		font-family: Arial, Helvetica, sans-serif; 
+		font-size: 21.59px; 
+		color: white; 
 		text-decoration: underline;
-		top: 0;
-		right: 0;
-		padding-top: 28px;
-		padding-right: 47px;
+		text-align: right;
+		white-space: nowrap;
 	}
-
+	.hero-section {
+		width: 100%;
+		font-size: 0;
+	}
+	.hero-img-section {
+		display: inline-block;
+		white-space: nowrap;
+	}
+	.hero-goal-section {
+		display: inline-block;
+	}
+	.office-img {
+		width: 100%;
+		height: auto;
+	}
+	.hero-goal-img {
+		width: 100%;
+		height: auto;
+	}
+	.two-body-content {
+		width: 100%;
+		font-size: 0;
+	}
+	.two-body-content .two-body-cols {
+		width: 100%;
+		max-width: 600px;
+		display: inline-block;
+		vertical-align: top;
+	}
+	.left-body-paragraph-section {
+		text-align: left; 
+		vertical-align: top; 
+		width: 50%; 
+		font-family: 'Lucida Grande'; 
+		font-size: 25px; 
+		line-height: 30px; 
+		padding-left: 35px;
+	}
+	.left-body-paragraph {
+		border-right: 2px solid #000; 
+		padding-right: 20px;
+	}
+	.right-body-paragraph-section {
+		text-align: center; 
+		vertical-align: middle; 
+		padding: 0 50px;
+		width: 50%; 
+		font-family: 'Lucida Grande'; 
+		font-size: 25px; 
+		line-height: 30px;
+	}
+	.right-body-paragraph {
+		border: 2px solid #000; 
+		margin-bottom: 100px; 
+		padding: 30px 10px;
+	}
+	.three-section-title {
+		width: 100%;
+	}
+	.three-section-title-paragraph {
+		text-align: center; 
+		font-size: 36px; 
+		font-weight: bold; 
+		border-top: 2px solid #000; 
+		margin: 0 123px; 
+		padding: 60px 0; 
+		letter-spacing: 2px;
+		font-family: 'Lucida Grande', Helvetica, sans-serif;
+	}
+	.tree-col-section {
+		font-size: 0;
+		text-align: center;
+	}
+	.three-col-section .three-col {
+		width: 100%;
+		max-width: 397px;
+		display: inline-block;
+		vertical-align: top;
+		padding-left: 6%;
+	}
+	.three-padding {
+		padding: 0 20px;
+	}
+	.three-content {
+		text-align: center;
+		font-family: 'Lucida Grande';
+	}
+	.learn-more-btn {
+		background-color: #b96eff; 
+		color: #fff; 
+		padding: 20px 75px; 
+		text-decoration: none; 
+		font-family: 'Gotham'; 
+		font-size: 20px; 
+		line-height: 37.74px; 
+		border-radius: 8px;
+	}
+	
 	@media (max-width: 640px) {
-        .main {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-        }
-    }
+	
+        .banner-logo {
+			padding-left: 30%;
 
+        }
+        .banner-link {
+            display: block;
+            background-color: white;
+			padding-left: 402px;
+			padding-top: 15px;
+			padding-bottom: 18px;
+        }
+		.a-banner-link {
+			color: black;
+		}
+		.hero-img-section, .hero-goal-section {
+        	display: inline-block;
+    	}
+		.office-img {
+			width: 640px;
+		}
+		.hero-goal-img {
+			width: 640px;
+		}
+		.two-body-content {
+			width: 640px;
+			text-align: center;
+		}
+		.left-body-paragraph-section {
+			width: 100%;
+		}
+		.left-body-paragraph{
+			border-right: none;
+		}
+		.right-body-paragraph-section {
+			width: 100%;
+			text-align: center;
+		}
+		.three-col-section {
+			width: 640px;
+			text-align: center;
+		}
+		.three-col {
+			text-align: center;
+			padding: 5%;
+		}
+		.three-section-title-paragraph {
+			margin-top: 20%;
+		}
+
+
+    }
 
 </style>
 	</head>
@@ -106,228 +220,273 @@
 
 		<center class="wrapper">
 
-			<table class="main" width="100%">
-
-				<tr id="banner">
-					<td id="banner-logo"><img src="assets/images/logo pgd.png"
-							alt="pgd #fff logo" id="pgd-banner-logo"></td>
-					<td style="background-color: #000;"><a
-							href="https://andylopezr.github.io/index.html" id="banner-link"
-							target="_blank">View this email online</a></td>
-				</tr>
+			<table class="main">
+				<!-- Top Banner -->
 				<tr>
-					<td><img src="assets/images/IMAGE HEADER.png" alt="hero image"></td>
-					<td style="position: relative;">
-						<img src="assets/images/BACKGROUND COPY HEADER.png"
-							alt="gray-purple background">
-						<table
-							style="position: absolute; top: 30%; left: 50%; transform: translate(-50%, -50%); color: #fff; text-align: center; width: 600px;">
+					<td style="background-color: black;">
+						<table width="100%">
 							<tr>
-								<td
-									style="font-family: 'Gotham'; font-size: 30px; line-height: 34px; letter-spacing: 2px;">GOAL
-									<br><br> TO USE INTELLIGENCE AND ANALYSIS TO UNDERSTAND THE <br>WORLD,
-									TO FIND THE TRUTH.</td>
-							</tr>
-						</table>
-						<table
-							style="position: absolute; top: 78%; left: 50%; transform: translate(-50%, -50%); color: #fff; text-align: center;">
-							<tr>
-								<td>
-									<a href="#"
-										style="background-color: #b96eff; color: #fff; padding: 20px 75px; text-decoration: none; font-family: 'Gotham'; font-size: 20px; line-height: 37.74px; border-radius: 8px;">EXPLORE
-										MORE</a>
+								<td class="two-col">
+
+									<table class="column">
+										<tr>
+											<td class="banner-logo" style>
+												<a
+													href="https://www.publicisgroupe.com/"
+													target="_blank">
+													<img src="assets/images/logo pgd.png" title="PGD logo"
+														alt="pgd logo" width="390px" height="55px">
+												</a>
+											</td>
+										</tr>
+									</table>
+
+									<table class="column">
+										<tr>
+											<td class="banner-link">
+												<a
+													class="a-banner-link"
+													href="https://andylopezr.github.io/index.html"
+													target="_blank">View this email online</a>
+											</td>
+										</tr>
+									</table>
 								</td>
 							</tr>
 						</table>
 					</td>
 				</tr>
-			</table> <!-- End Main Class -->
 
-			<table class="text-area" width="100%">
-				<tr>
-					<td
-						style="text-align: left; vertical-align: top; width: 50%; font-family: 'Lucida Grande'; font-size: 25px; line-height: 30px; padding-left: 35px;">
-						<p style="border-right: 2px solid #000; padding-right: 20px;">
-							Dear &lt;First Name&gt;<br><br><br>
-							You'll notice we have a new acronym. <br>
-							PGD - <span
-								style="font-weight: bold; text-decoration: underline;">Publicis Global
-								Delivery</span> - is the <br>
-							Groupe's single solution for distributed <br>
-							delivery expertise of all Publicis Global <br>
-							Services' capabilities. <br><br>
-							In addition to media, data & technology,<br>
-							PGD can now assist your agency and clients <br>
-							with production, commerce and <span
-								style="font-weight: bold; text-decoration: underline;">content</span>.
-							<br>
-							We're excited to provide these capabilities <br>
-							and look forward to partnering with you to deliver great work for our
-							clients. <br><br>
-							Hungary, Mauritius, and Translate Plus join <br>
-							our network of amazing talent across the globe.
-							We're also in the process of setting <br>
-							up a nearshore center in China.
-						</p>
-					</td>
-					<td
-						style=" text-align: center; vertical-align: middle; padding: 0 50px; width: 50%; font-family: 'Lucida Grande'; font-size: 25px; line-height: 30px;">
-						<p
-							style="border: 2px solid #000; margin-bottom: 100px; padding: 30px 10px;">
-							<span style="font-weight: bold;">PUBLICIS GROUPE GLOBAL
-								DELIVERY</span><br><br>
-							&lt; 133 AVENUE DES CHAMPS-ELYSEES,<br>
-							PARIS, ILE-DE-FRANCE, 75008 &gt; <br><br>
-							&lt; (+33) 1 44437000 &gt; <br><br>
-							Website: <br>
-							&lt;http://www.publicisgroupe.com&gt;
-						</p>
-						<a href="#"
-							style="background-color: #b96eff; color: #fff; padding: 20px 75px; text-decoration: none; font-family: 'Gotham'; font-size: 20px; line-height: 37.74px; border-radius: 8px;">LEARN
-							MORE</a>
-					</td>
+				<!-- End Top Banner -->
 
-				</tr>
-			</table>
-			<table class="triple-section-title">
+				<!-- Hero and Goal-->
 				<tr>
 					<td>
-						<p
-							style="font-family: 'Lucida Grande'; text-align: center; font-size: 36px; font-weight: bold; border-top: 2px solid #000; margin: 0 123px; padding: 60px 0; letter-spacing: 2px;">DIGITAL
-							LANDSCAPE DYNAMICS: <br>EXPLORING CIRCUITS, DATA, <br>AND MEDIA
-							CONTENT</p>
+						<table width="100%">
+							<tr>
+								<td class="hero-section">
+
+									<table class="hero-img-section">
+										<tr>
+											<td class>
+												<a
+													href="https://www.publicisgroupe.com/"
+													target="_blank">
+													<img src="assets/images/IMAGE HEADER.png" title="Office image"
+														alt="hero image" class="office-img">
+												</a>
+											</td>
+										</tr>
+									</table>
+
+									<table class="hero-goal-section">
+										<tr>
+											<td style="position: relative;">
+												<a
+													href="https://www.publicisgroupe.com/"
+													target="_blank">
+													<img src="assets/images/BACKGROUND COPY HEADER.png"
+														title="Color background"
+														alt="color background"
+														class="hero-goal-img">
+												</a>
+												<table
+													style="position: absolute; top: 30%; left: 50%; transform: translate(-50%, -50%); color: #fff; text-align: center; width: 600px;">
+													<tr>
+														<td
+															style="font-family: 'Gotham'; font-size: 30px; line-height: 34px; letter-spacing: 2px;">GOAL
+															<br><br> TO USE INTELLIGENCE AND ANALYSIS TO UNDERSTAND THE
+															<br>WORLD,
+															TO FIND THE TRUTH.
+														</td>
+													</tr>
+												</table>
+												<table
+													style="position: absolute; top: 78%; left: 50%; transform: translate(-50%, -50%); color: #fff; text-align: center;">
+													<tr>
+														<td>
+															<a href="#"
+																style="background-color: #b96eff; color: #fff; padding: 20px 75px; text-decoration: none; font-family: 'Gotham'; font-size: 20px; line-height: 37.74px; border-radius: 8px;">EXPLORE
+																MORE</a>
+														</td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
 					</td>
 				</tr>
+				<!-- End of Hero and Goal-->
 
-			</table>
-			<table class="triple-section" width="100%">
+				<!-- Text and Company Info -->
 
-				<tr style="font-family: 'Lucida Grande';">
-					<td style="display: table-cell; text-align: center;">
-						<img src="assets/icons/tech-icon.png" alt="tech icon">
-						<p style="font-size: 32px; font-weight: bold;">Tech</p>
-						<p style="font-size: 25px;">
-							Circuits form the <br>
-							backbone of electronic <br>
-							devices, enabling the <br>
-							flow of electrical current <br>
-							and facilitating the <br>
-							transfer of information.
-						</p>
-					</td>
-					<td style="display: table-cell; text-align: center;">
-						<img src="assets/icons/data-icon.png" alt="data icon">
-						<p style="font-size: 32px; font-weight: bold;">Data</p>
-						<p style="font-size: 25px;">
-							Data, in the realm of <br>
-							computing, represents <br>
-							the raw facts and <br>
-							figures that are <br>
-							processed to extract <br>
-							meaningful insights.
-						</p>
-					</td>
-					<td style="display: table-cell; text-align: center;">
-						<img src="assets/icons/content-icon.png" alt="content icon"
-							style="margin-top: -35px;">
-						<p style="font-size: 32px; font-weight: bold;">Content</p>
-						<p style="font-size: 25px;">
-							Media content, <br>
-							encompassing a wide <br>
-							range of formats such <br>
-							as text, images, audio, <br>
-							and video.
-						</p>
-					</td>
-				</tr>
-			</table>
-			<table class="social-media-title">
 				<tr>
 					<td>
-						<p
-							style="font-family: 'Lucida Grande'; font-size: 36px; font-weight: bold; color: #fff; text-align: center; border-bottom: 2px solid #fff; margin: 0 280px 70px 280px; padding-top: 80px; padding-bottom: 20px; letter-spacing: 3px;">
-							CONNECT WITH US
-						</p>
+						<table width="100%">
+							<tr>
+								<td class="two-body-content">
+									<table class="two-body-cols">
+										<tr>
+											<td class="left-body-paragraph-section">
+												<p class="left-body-paragraph">
+													Dear &lt;First Name&gt;<br><br><br>
+													You'll notice we have a new acronym. <br>
+													PGD - <span
+														style="font-weight: bold; text-decoration: underline;">Publicis
+														Global
+														Delivery</span> - is the <br>
+													Groupe's single solution for distributed <br>
+													delivery expertise of all Publicis Global <br>
+													Services' capabilities. <br><br>
+													In addition to media, data & technology,<br>
+													PGD can now assist your agency and clients <br>
+													with production, commerce and <span
+														style="font-weight: bold; text-decoration: underline;">content</span>.
+													<br>
+													We're excited to provide these capabilities <br>
+													and look forward to partnering with you to deliver great work for
+													our
+													clients. <br><br>
+													Hungary, Mauritius, and Translate Plus join <br>
+													our network of amazing talent across the globe.
+													We're also in the process of setting <br>
+													up a nearshore center in China.
+												</p>
+											</td>
+										</tr>
+									</table>
+									<table class="two-body-cols">
+										<tr>
+											<td class="right-body-paragraph-section">
+												<p class="right-body-paragraph">
+													<span style="font-weight: bold;">PUBLICIS GROUPE GLOBAL
+														DELIVERY</span><br><br>
+													&lt; 133 AVENUE DES CHAMPS-ELYSEES,<br>
+													PARIS, ILE-DE-FRANCE, 75008 &gt; <br><br>
+													&lt; (+33) 1 44437000 &gt; <br><br>
+													Website: <br>
+													&lt;http://www.publicisgroupe.com&gt;
+												</p>
+												<a href="#" class="learn-more-btn">LEARN MORE</a>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
 					</td>
 				</tr>
-			</table>
-			<table class="social-media-icons">
-				<tr style="background-color: #fff;">
-					<td>
-						<a href="https://www.facebook.com/PGDLatam/" target="_blank">
-							<img src="assets/icons/facebook-icon.png" alt="facebook-icon"
-								style="padding: 30px 29px 30px 100px;">
-						</a>
-					</td>
-					<td>
-						<a href="https://twitter.com/PublicisGroupe" target="_blank">
-							<img src="assets/icons/twitter-icon.png" alt="twitter-icon"
-								style="padding: 30px 29px;">
-						</a>
-					</td>
-					<td>
-						<a href="https://www.linkedin.com/company/pgd/" target="_blank">
-							<img src="assets/icons/linkedin-icon.png" alt="linkedin-icon"
-								style="padding: 30px 29px;">
-						</a>
-					</td>
-					<td>
-						<a href="https://www.instagram.com/pgd_latam" target="_blank">
-							<img src="assets/icons/instagram-icon.png" alt="instagram-icon"
-								style="padding: 30px 29px;">
-						</a>
-					</td>
-					<td>
-						<a href="https://www.youtube.com" target="_blank">
-							<img src="assets/icons/youtube-icon.png" alt="youtube-icon"
-								style="padding: 30px 100px 30px 29px;">
-						</a>
-					</td>
-				</tr>
-			</table>
 
-			<table class="footer">
+				<!-- End of Text and Company Info -->
+
+				<!-- Three Column Image Content Title -->
+
 				<tr>
-					<td
-						style="background-color: #000; color: #fff; font-family: Arial, Helvetica, sans-serif;; padding: 100px 50px 80px 50px; font-size: 18px; text-align: left;">
-						It is a long established fact that a reader will be distracted by the
-						readable content of a page when looking at its layout. The point of using
-						<br>
-						Lorem Ipsum is that it has a more-or-less normal distribution of letters,
-						as opposed to using 'Content here, content here', making it look <br> like
-						readable English. Many desktop publishing packages and web page editors
-						now use Lorem Ipsum as their default model text, and a <br>search for
-						'lorem ipsum' will uncover many web sites still in their infancy. Various
-						versions have evolved over the years, sometimes by <br>accident, sometimes
-						on
-						purpose (<span
-							style="font-weight: bold; text-decoration: underline;">injected humour
-							and the
-							like</span>). <br><br>
+					<td>
+						<table class="three-section-title">
+							<tr>
+								<td>
+									<p class="three-section-title-paragraph">
+										DIGITAL LANDSCAPE DYNAMICS:<br>
+										EXPLORING CIRCUITS, DATA, <br>
+										AND MEDIA CONTENT</p>
+								</td>
+							</tr>
 
-						There are many variations of passages of Lorem Ipsum available, but the
-						majority have suffered alteration in some form, by injected <br> humour,
-						or
-						randomised words which don't look even slightly believable. If you are
-						going to use a passage of Lorem Ipsum, you need to be <br> sure there
-						isn't
-						anything embarrassing hidden in the middle of text. All the Lorem Ipsum
-						generators on the Internet tend to repeat <br> predefined chunks as
-						necessary,
-						making this the first true generator on the Internet. It uses a dictionary
-						of over 200 <span
-							style="font-weight: bold; text-decoration: underline;">Latin
-							words</span>,<br>
-						combined with a handful of model sentence
-						structures, to generate Lorem Ipsum which looks reasonable. The generated
-						Lorem Ipsum is <br>therefore always free from repetition, injected humour,
-						or
-						non-characteristic words etc. <br><br>
-
-						Copyright PGD 2024. All rights reserved.
+						</table>
 					</td>
 				</tr>
+
+				<!-- End of Three Column Image Content Title -->
+
+				<!-- Three Column Image Content -->
+				<tr>
+					<td>
+						<table width="100%">
+							<tr>
+								<td class="three-col-section">
+
+									<table class="three-col">
+										<tr>
+											<td class="three-padding">
+												<table class="three-content">
+													<tr>
+														<td>
+															<a href="#"><img src="assets/icons/tech-icon.png"
+																	alt="tech icon"></a>
+															<p style="font-size: 32px; font-weight: bold;">Tech</p>
+															<p style="font-size: 25px;">
+																Circuits form the <br>
+																backbone of electronic <br>
+																devices, enabling the <br>
+																flow of electrical current <br>
+																and facilitating the <br>
+																transfer of information.
+															</p>
+														</td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+									</table>
+									<table class="three-col">
+										<tr>
+											<td class="three-padding">
+												<table class="three-content">
+													<tr>
+														<td>
+															<a href="#"><img src="assets/icons/data-icon.png"
+																	alt="data icon">
+															</a>
+															<p style="font-size: 32px; font-weight: bold;">Data</p>
+															<p style="font-size: 25px;">
+																Data, in the realm of <br>
+																computing, represents <br>
+																the raw facts and <br>
+																figures that are <br>
+																processed to extract <br>
+																meaningful insights.
+															</p>
+														</td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+									</table>
+									<table class="three-col">
+										<tr>
+											<td class="three-padding">
+												<table class="three-content">
+													<tr>
+														<td>
+															<a href="#"><img src="assets/icons/content-icon.png"
+																	alt="content icon"></a>
+															<p style="font-size: 32px; font-weight: bold;">Content</p>
+															<p style="font-size: 25px;">
+																Media content, <br>
+																encompassing a wide <br>
+																range of formats such <br>
+																as text, images, audio, <br>
+																and video.
+															</p>
+														</td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<!-- End of Three Column Image Content -->
+
 			</table>
+
 		</center> <!-- End Wrapper -->
 
 	</body>
