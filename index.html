@@ -101,7 +101,7 @@
 		padding-left: 35px;
 	}
 	.left-body-paragraph {
-		border-right: 2px solid #000; 
+		border-right: 2px solid black; 
 		padding-right: 20px;
 	}
 	.right-body-paragraph-section {
@@ -114,7 +114,7 @@
 		line-height: 30px;
 	}
 	.right-body-paragraph {
-		border: 2px solid #000; 
+		border: 2px solid black; 
 		margin-bottom: 100px; 
 		padding: 30px 10px;
 	}
@@ -125,13 +125,13 @@
 		text-align: center; 
 		font-size: 36px; 
 		font-weight: bold; 
-		border-top: 2px solid #000; 
+		border-top: 2px solid black; 
 		margin: 0 123px; 
 		padding: 60px 0; 
 		letter-spacing: 2px;
 		font-family: 'Lucida Grande', Helvetica, sans-serif;
 	}
-	.tree-col-section {
+	.three-col-section {
 		font-size: 0;
 		text-align: center;
 	}
@@ -140,10 +140,10 @@
 		max-width: 397px;
 		display: inline-block;
 		vertical-align: top;
-		padding-left: 6%;
+		padding: 0 40px;
 	}
 	.three-padding {
-		padding: 0 20px;
+		padding: 20px 10px;
 	}
 	.three-content {
 		text-align: center;
@@ -151,7 +151,7 @@
 	}
 	.learn-more-btn {
 		background-color: #b96eff; 
-		color: #fff; 
+		color: white; 
 		padding: 20px 75px; 
 		text-decoration: none; 
 		font-family: 'Gotham'; 
@@ -159,9 +159,69 @@
 		line-height: 37.74px; 
 		border-radius: 8px;
 	}
-	
+	.social-media-title {
+		width: 100%;
+		max-width: 1200px;
+		background-color: black;
+		text-align: center; 
+		width: 100%; 
+		padding: 0 23.5%;
+		white-space: nowrap;
+	}
+	.social-media-section {
+		width: 100%;
+		font-size: 0;
+		max-width: 1200px;
+		background-color: black;
+		text-align: center;
+	}
+	.social-media-col {
+		width: 100%;
+		max-width: 1200px;
+		background-color: black;
+		text-align: center;
+	}
+	.social-media-title-paragraph {
+		font-family: 'Lucida Grande'; 
+		font-size: 36px; 
+		font-weight: bold; 
+		color: white; 
+		text-align: center; 
+		border-bottom: 2px solid white; 
+		padding-top: 80px; 
+		padding-bottom: 20px; 
+		letter-spacing: 3px;
+		white-space: nowrap;
+	}
+	.social-media-icons {
+		text-align: center;
+		margin-left: 23.2%;
+	}
+	.social-padding {
+		background-color: white;
+	}
+
+	.footer-content {
+		width: 100%;
+		max-width: 1200px;
+		background-color: black; 
+		color: white; 
+		font-family: Arial, Helvetica, sans-serif;
+		padding: 100px 50px 80px 50px; 
+		font-size: 18px; 
+		text-align: left;
+	}
+	.social-fb {
+		padding: 30px 29px 30px 100px;
+	}
+	.social-yt {
+		padding: 30px 100px 30px 29px;
+	}
+
 	@media (max-width: 640px) {
-	
+		.wrapper {
+			width: 640px;
+		}
         .banner-logo {
 			padding-left: 30%;
 
@@ -210,8 +270,46 @@
 		.three-section-title-paragraph {
 			margin-top: 20%;
 		}
+		.social-media-section td {
+			width: 640px;
+		}
+		.social-media-title {
+			width: 640px;
+			padding: 0 5%;
+		}
+		.social-media-title-paragraph {
+			white-space: nowrap;
+			margin: 0 45px 70px 45px; 
+			padding-top: 10%;
+		}
+		.social-media-icons td {
+    		display: block;
+    		text-align: center;
+			width: 560px;
+  		}
+		.social-media-col {
+			width: 640px;
+			margin-left: -17%;
+		}
+		.social-padding {
+			margin: 15px 0;
+		}
+		.footer {
+			width: 640px;
+		}
+		footer td{
+			width: 640px;
+		}
 
-
+		.footer-content td {
+			width: 640px;
+		}
+		.social-fb {
+			padding: 30px 29px;
+		}
+		.social-yt {
+			padding: 30px 29px;
+		}
     }
 
 </style>
@@ -291,7 +389,7 @@
 														class="hero-goal-img">
 												</a>
 												<table
-													style="position: absolute; top: 30%; left: 50%; transform: translate(-50%, -50%); color: #fff; text-align: center; width: 600px;">
+													style="position: absolute; top: 30%; left: 50%; transform: translate(-50%, -50%); color: white; text-align: center; width: 600px;">
 													<tr>
 														<td
 															style="font-family: 'Gotham'; font-size: 30px; line-height: 34px; letter-spacing: 2px;">GOAL
@@ -302,11 +400,11 @@
 													</tr>
 												</table>
 												<table
-													style="position: absolute; top: 78%; left: 50%; transform: translate(-50%, -50%); color: #fff; text-align: center;">
+													style="position: absolute; top: 78%; left: 50%; transform: translate(-50%, -50%); color: white; text-align: center;">
 													<tr>
 														<td>
 															<a href="#"
-																style="background-color: #b96eff; color: #fff; padding: 20px 75px; text-decoration: none; font-family: 'Gotham'; font-size: 20px; line-height: 37.74px; border-radius: 8px;">EXPLORE
+																style="background-color: #b96eff; color: white; padding: 20px 75px; text-decoration: none; font-family: 'Gotham'; font-size: 20px; line-height: 37.74px; border-radius: 8px;">EXPLORE
 																MORE</a>
 														</td>
 													</tr>
@@ -483,11 +581,132 @@
 						</table>
 					</td>
 				</tr>
-				<!-- End of Three Column Image Content -->
 
-			</table>
+				<!-- Social Media -->
 
-		</center> <!-- End Wrapper -->
+				<tr>
+					<td>
+						<table class="social-media-title">
+							<tr>
+								<td>
+									<p class="social-media-title-paragraph">
+										CONNECT WITH US
+									</p>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
 
-	</body>
-</html>
+				<tr>
+					<td>
+						<table class="social-media-section">
+							<tr>
+								<td>
+									<table class="social-media-col">
+										<tr>
+											<td>
+												<table class="social-media-icons">
+													<td class="social-padding">
+														<a href="https://www.facebook.com" target="_blank">
+															<img src="assets/icons/facebook-icon.png" alt="facebook-icon"
+																class="social-fb">
+														</a>
+													</td>
+													<td class="social-padding">
+														<a href="https://www.twitter.com" target="_blank">
+															<img src="assets/icons/twitter-icon.png" alt="twitter-icon"
+																style="padding: 30px 29px;">
+														</a>
+													</td>
+													<td class="social-padding">
+														<a href="https://www.linkedin.com" target="_blank">
+															<img src="assets/icons/linkedin-icon.png" alt="linkedin-icon"
+																style="padding: 30px 29px;">
+														</a>
+													</td>
+													<td class="social-padding">
+														<a href="https://www.instagram.com" target="_blank">
+															<img src="assets/icons/instagram-icon.png" alt="instagram-icon"
+																style="padding: 30px 29px;">
+														</a>
+													</td>
+													<td class="social-padding">
+														<a href="https://www.youtube.com" target="_blank">
+															<img src="assets/icons/youtube-icon.png" alt="youtube-icon"
+																class="social-yt">
+														</a>
+													</td>
+												</table>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+
+				<!-- End of Social Media -->
+
+				<!-- Footer -->
+
+				<tr>
+					<td>
+						<table class="footer">
+							<tr>
+								<td class="footer-content">
+									It is a long established fact that a reader will be distracted by the
+									readable content of a page when looking at its layout. The point of
+									using
+									<br>
+									Lorem Ipsum is that it has a more-or-less normal distribution of
+									letters,
+									as opposed to using 'Content here, content here', making it look <br>
+									like
+									readable English. Many desktop publishing packages and web page editors
+									now use Lorem Ipsum as their default model text, and a <br>search for
+									'lorem ipsum' will uncover many web sites still in their infancy.
+									Various
+									versions have evolved over the years, sometimes by <br>accident,
+									sometimes
+									on
+									purpose (<span
+										style="font-weight: bold; text-decoration: underline;">injected humour
+										and the
+										like</span>). <br><br>
+									There are many variations of passages of Lorem Ipsum available, but the
+									majority have suffered alteration in some form, by injected <br>
+									humour,
+									or
+									randomised words which don't look even slightly believable. If you are
+									going to use a passage of Lorem Ipsum, you need to be <br> sure there
+									isn't
+									anything embarrassing hidden in the middle of text. All the Lorem Ipsum
+									generators on the Internet tend to repeat <br> predefined chunks as
+									necessary,
+									making this the first true generator on the Internet. It uses a
+									dictionary
+									of over 200 <span
+										style="font-weight: bold; text-decoration: underline;">Latin
+										words</span>,<br>
+									combined with a handful of model sentence
+									structures, to generate Lorem Ipsum which looks reasonable. The
+									generated
+									Lorem Ipsum is <br>therefore always free from repetition, injected
+									humour,
+									or
+									non-characteristic words etc. <br><br>
+									Copyright PGD 2024. All rights reserved.
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+
+				<!-- End of Footer-->
+
+			</center> <!-- End Wrapper -->
+
+		</body>
+	</html>
